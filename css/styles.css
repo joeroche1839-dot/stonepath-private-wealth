@@ -79,9 +79,13 @@
 }
 .page-hero {
   background-color: var(--brand-deep);
+  /* Same stepping-stones photo as the home hero, with a stronger navy wash
+     (these headers are shorter, so we darken a touch more for crisp text). */
   background-image:
-    radial-gradient(800px 420px at 82% 0%, rgba(184,146,74,.16), transparent 60%),
-    linear-gradient(160deg, #0e2238 0%, #16314e 60%, #0b1c30 100%);
+    linear-gradient(180deg, rgba(8,20,34,.82) 0%, rgba(10,24,40,.66) 55%, rgba(8,18,30,.92) 100%),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Advisor card / monogram (stands in for a headshot until one is provided) */
