@@ -115,6 +115,24 @@
 .disclaimer { background: var(--brand-deep); color: rgba(255,255,255,.55); font-size: .8rem; line-height:1.6; padding: 22px 0; }
 .disclaimer .container { max-width: 1000px; text-align: center; }
 
+/* Solid premium header so the logo's dark wordmark always reads (on any page/hero) */
+.header { background: rgba(255,254,251,.96); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(10px); padding: 11px 0; }
+.header.scrolled { box-shadow: var(--shadow-sm); padding: 8px 0; }
+.brand-logo { height: 54px; width: auto; display: block; }
+.header .nav-links a { color: var(--slate); }
+.header .nav-links a:hover, .header .nav-links a.active { background: var(--tint); color: var(--brand); }
+.header .nav-phone { color: var(--brand); }
+.header .nav-toggle { background: var(--tint); }
+.header .nav-toggle span { background: var(--brand); }
+@media (max-width: 860px) { .brand-logo { height: 46px; } }
+
+/* Advisor headshot inside the navy panel */
+.advisor-photo {
+  width: 118px; height: 152px; object-fit: cover; object-position: center top;
+  border-radius: var(--radius); border: 1px solid rgba(216,184,119,.45);
+  box-shadow: var(--shadow-md); flex-shrink: 0;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
