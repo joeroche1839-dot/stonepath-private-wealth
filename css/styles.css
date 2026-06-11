@@ -118,13 +118,16 @@
 /* Solid premium header so the logo's dark wordmark always reads (on any page/hero) */
 .header { background: rgba(255,254,251,.96); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(10px); padding: 11px 0; }
 .header.scrolled { box-shadow: var(--shadow-sm); padding: 8px 0; }
-.brand-logo { height: 54px; width: auto; display: block; }
+.brand-logo { height: 27px; width: auto; display: block; }
+/* Large brand logo featured in the home hero (cream version on navy) */
+.hero-logo { height: 96px; width: auto; display: block; margin: 0 auto 26px; }
+@media (max-width: 600px) { .hero-logo { height: 72px; } }
 .header .nav-links a { color: var(--slate); }
 .header .nav-links a:hover, .header .nav-links a.active { background: var(--tint); color: var(--brand); }
 .header .nav-phone { color: var(--brand); }
 .header .nav-toggle { background: var(--tint); }
 .header .nav-toggle span { background: var(--brand); }
-@media (max-width: 860px) { .brand-logo { height: 46px; } }
+@media (max-width: 860px) { .brand-logo { height: 23px; } }
 
 /* Advisor headshot inside the navy panel */
 .advisor-photo {
